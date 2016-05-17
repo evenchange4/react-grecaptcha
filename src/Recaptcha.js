@@ -19,7 +19,7 @@ class Recaptcha extends React.Component {
   }
 
   static defaultProps = {
-    locale: 'en'
+    locale: 'en',
   }
 
   componentDidMount() {
