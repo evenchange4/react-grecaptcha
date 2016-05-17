@@ -1,0 +1,6 @@
+src
+.editorconfig
+.nyc_output
+.npmignore
+.stylelintrc
+coverage/
