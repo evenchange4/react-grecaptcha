@@ -35,6 +35,10 @@
 4. I18n support.
   - https://developers.google.com/recaptcha/docs/language
 
+## Quick Demo on Webpackbin
+
+http://www.webpackbin.com/4yr28fNzb
+
 ## Installation
 
 ```console
