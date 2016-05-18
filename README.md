@@ -52,7 +52,7 @@ const verifyCallback = response => console.log(response);
 const expiredCallback = () => {...};
 
 <Recaptcha
-  sitekey={process.env.RECAPTCHA_SITE_KEY}
+  sitekey={RECAPTCHA_SITE_KEY}
   callback={verifyCallback}
   expiredCallback={expiredCallback}
   locale="zh-TW"
@@ -60,6 +60,8 @@ const expiredCallback = () => {...};
 ```
 
 ## API
+
+- To reset the recaptcha:
 
 ```
 window.grecaptcha.reset();

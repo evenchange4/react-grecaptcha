@@ -8,7 +8,7 @@ const emptyFunction = () => {};
 test('should render with `g-recaptcha` className', t => {
   const wrapper = shallow(
     <Recaptcha
-      sitekey="6Ldx8R4TAAAAAMB-6jJol-f-po1-Bbg0ArMGJ11L"
+      sitekey="6LedJiATAAAAAJvpLFxW9dSiEGu8rGyoOIuTsvtg"
       callback={emptyFunction}
       expiredCallback={emptyFunction}
     />
