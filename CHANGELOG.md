@@ -3,7 +3,7 @@
 ## [HEAD]
 > Unreleased
 
-## [v1.0.1]
+## [v1.0.3]
 > May 25, 2016
 
 * fix(importScript): fix for firefox
