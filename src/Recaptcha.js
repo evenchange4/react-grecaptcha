@@ -26,12 +26,17 @@ class Recaptcha extends React.Component {
     const { locale, callback, expiredCallback } = this.props;
 
     // 1. Async lazy load
+    const head = document.head || document.getElementsByTagName('head')[0];
     const script = document.createElement('script');
     script.id = ID;
     script.src = `https://www.google.com/recaptcha/api.js?hl=${locale}`;
+    script.type = 'text/javascript';
     script.async = true;
     script.defer = true;
-    document.body.appendChild(script);
+    script.onerror = (oError) => {
+      throw new URIError(`The script ${oError.target.src} is not accessible.`);
+    };
+    head.appendChild(script);
 
     // 2. Expose callback function to window object
     window[CALLBACK_NAME] = callback;
