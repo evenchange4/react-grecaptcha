@@ -59,7 +59,7 @@
     "nyc": "^7.1.0",
     "react": "^15.0.0",
     "react-addons-test-utils": "^15.1.0",
-    "react-dom": "^15.0.0"
+    "react-dom": "^15.0.2"
   },
   "babel": {
     "presets": [
