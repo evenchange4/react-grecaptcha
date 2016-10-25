@@ -1,5 +1,6 @@
 import { default as React, PropTypes } from 'react';
 import c from 'classnames';
+import omit from 'lodash.omit';
 
 // Constants
 const ID = '_grecaptcha.element.id';
@@ -50,9 +51,10 @@ class Recaptcha extends React.Component {
   render() {
     const { className, sitekey, ...otherProps } = this.props;
 
+
     return (
       <div
-        {...otherProps}
+        {...omit(otherProps, Object.keys(this.constructor.propTypes)) }
         className={c('g-recaptcha', className)}
         data-sitekey={sitekey}
         data-callback={CALLBACK_NAME}
