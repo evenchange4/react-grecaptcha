@@ -5,7 +5,7 @@ import Recaptcha from '../src/Recaptcha';
 
 const emptyFunction = () => {};
 
-test('should render with `g-recaptcha` className', t => {
+test('should render with `g-recaptcha` className', (t) => {
   const wrapper = shallow(
     <Recaptcha
       sitekey="6LedJiATAAAAAJvpLFxW9dSiEGu8rGyoOIuTsvtg"
