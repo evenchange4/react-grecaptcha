@@ -4,7 +4,6 @@ import { shallow } from 'enzyme';
 import Recaptcha from '../src/Recaptcha';
 
 const emptyFunction = () => {};
-
 const wrapper = shallow(
   <Recaptcha
     sitekey="6LedJiATAAAAAJvpLFxW9dSiEGu8rGyoOIuTsvtg"
@@ -13,8 +12,7 @@ const wrapper = shallow(
   />
 );
 
-
-test('should render with `g-recaptcha` className', t => {
+test('should render with `g-recaptcha` className', (t) => {
 
   t.is(
     wrapper.find('.g-recaptcha').length,
@@ -22,8 +20,7 @@ test('should render with `g-recaptcha` className', t => {
   );
 });
 
-
-test('should render without non-HTML component properties', t => {
+test('should render without non-HTML component properties', (t) => {
   const wrapperProps = wrapper.props();
 
   t.falsy(wrapperProps.callback);

@@ -1,8 +1,7 @@
 sudo: false
 language: node_js
 node_js:
-  - "4"
-  - "4.2.2"
+  - "6"
 
 notifications:
   email: evenchange4@gmail.com

@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.0]
+> Oct 25, 2016
+
+* feat(node): support for node v6 and npm v3.
+
 ## [v1.0.3]
 > May 25, 2016
 
