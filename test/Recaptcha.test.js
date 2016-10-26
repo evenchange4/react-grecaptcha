@@ -13,7 +13,6 @@ const wrapper = shallow(
 );
 
 test('should render with `g-recaptcha` className', (t) => {
-
   t.is(
     wrapper.find('.g-recaptcha').length,
     1,

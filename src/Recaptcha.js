@@ -51,10 +51,9 @@ class Recaptcha extends React.Component {
   render() {
     const { className, sitekey, ...otherProps } = this.props;
 
-
     return (
       <div
-        {...omit(otherProps, Object.keys(this.constructor.propTypes)) }
+        {...omit(otherProps, ['callback', 'expiredCallback', 'locale'])}
         className={c('g-recaptcha', className)}
         data-sitekey={sitekey}
         data-callback={CALLBACK_NAME}
