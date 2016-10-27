@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.1]
+> Oct 27, 2016
+
+* fix(props warning): omit invalid HTML props from the rendered div tag that have been passed the component's props until now. ([fde31](https://github.com/fde31) in [#34])
+
 ## [v1.1.0]
 > Oct 25, 2016
 
