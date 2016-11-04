@@ -7,6 +7,8 @@ const ID = '_grecaptcha.element.id';
 const CALLBACK_NAME = '_grecaptcha.data-callback';
 const EXPIRED_CALLBACK_NAME = '_grecaptcha.data-expired-callback';
 
+const removeChild = elem => elem.parentNode && elem.parentNode.removeChild(elem);
+
 class Recaptcha extends React.Component {
   static propTypes = {
     // Required
@@ -45,7 +47,7 @@ class Recaptcha extends React.Component {
   }
 
   componentWillUnmount() {
-    document.getElementById(ID).remove();
+    removeChild(document.getElementById(ID));
   }
 
   render() {

@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.2]
+> Nov 04, 2016
+
+* fix(componentWillUnmount): Unmounting doesn't work in IE. (in [#38])
+
 ## [v1.1.1]
 > Oct 27, 2016
 
