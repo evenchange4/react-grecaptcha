@@ -39,6 +39,8 @@
 
 http://www.webpackbin.com/4yr28fNzb
 
+[![./docs/screenshot.gif](./docs/screenshot.gif)](http://www.webpackbin.com/4yr28fNzb)
+
 ## Installation
 
 ```console
