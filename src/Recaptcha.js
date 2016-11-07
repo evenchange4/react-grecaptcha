@@ -1,4 +1,4 @@
-import { default as React, PropTypes } from 'react';
+import React, { PropTypes } from 'react';
 import c from 'classnames';
 import omit from 'lodash.omit';
 

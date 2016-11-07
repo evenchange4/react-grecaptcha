@@ -9,7 +9,7 @@ const wrapper = shallow(
     sitekey="6LedJiATAAAAAJvpLFxW9dSiEGu8rGyoOIuTsvtg"
     callback={emptyFunction}
     expiredCallback={emptyFunction}
-  />
+  />,
 );
 
 test('should render with `g-recaptcha` className', (t) => {
