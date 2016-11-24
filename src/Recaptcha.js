@@ -43,7 +43,7 @@ class Recaptcha extends React.Component {
 
     // 2. Expose callback function to window object
     window[CALLBACK_NAME] = callback;
-    window[EXPIRED_CALLBACK_NAME] = () => expiredCallback;
+    window[EXPIRED_CALLBACK_NAME] = expiredCallback;
   }
 
   componentWillUnmount() {
