@@ -37,9 +37,9 @@
 
 ## Quick Demo on Webpackbin
 
-http://www.webpackbin.com/4yr28fNzb
+http://www.webpackbin.com/VkzIYI1ff
 
-[![./docs/screenshot.gif](./docs/screenshot.gif)](http://www.webpackbin.com/4yr28fNzb)
+[![./docs/screenshot.gif](./docs/screenshot.gif)](http://www.webpackbin.com/VkzIYI1ff)
 
 ## Installation
 
