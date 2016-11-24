@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.3]
+> Nov 24, 2016
+
+* fix(expiredCallback): expiredCallback does not work. ([kidder514](https://github.com/kidder514) in [#43])
+
 ## [v1.1.2]
 > Nov 04, 2016
 
