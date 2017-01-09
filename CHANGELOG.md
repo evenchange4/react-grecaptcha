@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.4]
+> Jan 09, 2017
+
+* style(eslint): update eslint airbnb style.
+
 ## [v1.1.3]
 > Nov 24, 2016
 
