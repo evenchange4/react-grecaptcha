@@ -58,6 +58,7 @@ const expiredCallback = () => {...};
   callback={verifyCallback}
   expiredCallback={expiredCallback}
   locale="zh-TW"
+  className="customClassName"
 />
 ```
 
