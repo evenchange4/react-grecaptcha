@@ -18,12 +18,14 @@ class Recaptcha extends React.Component {
 
     // Options
     className: PropTypes.string,
+    invisible: PropTypes.bool,
     locale: PropTypes.string,
   }
 
   static defaultProps = {
     locale: 'en',
     className: undefined,
+    invisible: false,
   }
 
   componentDidMount() {
@@ -52,16 +54,19 @@ class Recaptcha extends React.Component {
   }
 
   render() {
-    const { className, sitekey, ...otherProps } = this.props;
+    const { className, sitekey, invisible, ...otherProps } = this.props;
+    
+    const props = {
+      ...omit(otherProps, ['callback', 'expiredCallback', 'locale']),
+      className: c('g-recaptcha', className),
+      'data-sitekey': sitekey,
+      'data-callback': CALLBACK_NAME,
+      'data-expired-callback': EXPIRED_CALLBACK_NAME,
+      ...( invisible && { 'data-size': invisible }),
+    };
 
     return (
-      <div
-        {...omit(otherProps, ['callback', 'expiredCallback', 'locale'])}
-        className={c('g-recaptcha', className)}
-        data-sitekey={sitekey}
-        data-callback={CALLBACK_NAME}
-        data-expired-callback={EXPIRED_CALLBACK_NAME}
-      />
+      <div {...props} />
     );
   }
 }
