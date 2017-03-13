@@ -26,6 +26,7 @@
 [devDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=devDependencies
 [peerDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/peer-status.svg?style=flat-square
 [peerDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=peerDependencies
+[![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/react-grecaptcha.svg)](https://greenkeeper.io/)
 
 ## Feature
 
