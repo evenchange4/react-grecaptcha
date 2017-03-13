@@ -11,3 +11,5 @@ notifications:
 script:
   - yarn run lint
   - yarn run test:coverage
+
+after_success: yarn run coverage
