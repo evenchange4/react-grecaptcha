@@ -35,6 +35,7 @@
 3. Automatically render the reCAPTCHA widget.
 4. I18n support.
   - https://developers.google.com/recaptcha/docs/language
+5. Simple to use.
 
 ## Quick Demo on Webpackbin
 
