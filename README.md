@@ -71,11 +71,29 @@ const expiredCallback = () => {...};
 window.grecaptcha.reset();
 ```
 
+### props
+
+#### Required
+-   `sitekey`: PropTypes.string.isRequired
+-   `callback`: PropTypes.func.isRequired
+-   `expiredCallback`: PropTypes.func.isRequired
+
+#### Options
+-   `className`: PropTypes.string
+-   `invisible`: PropTypes.bool
+-   `locale`: PropTypes.string
+
+## Development
+
+```
+$ yarn install
+```
+
 ## Test
 
 ```
-$ npm run lint
-$ npm run test:watch
+$ yarn run lint
+$ yarn run test:watch
 ```
 
 ---

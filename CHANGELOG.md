@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.5]
+> Mar 23, 2017
+
+* feat: Add `invisible` props & switch to jest & replaced npm-client with yarn ([ptondereau](https://github.com/ptondereau) in [#53])
+
 ## [v1.1.4]
 > Jan 09, 2017
 
