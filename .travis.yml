@@ -3,17 +3,13 @@ language: node_js
 node_js:
   - "6"
 
+cache: yarn
+
 notifications:
   email: evenchange4@gmail.com
 
-before_install:
-  # remove useless/non listed deps
-  - npm prune
-  # faster npm install
-  - npm set progress=false
-
 script:
-  - npm run lint
-  - npm run test:coverage
+  - yarn run lint
+  - yarn run test:coverage
 
-after_success: npm run coverage
+after_success: yarn run coverage

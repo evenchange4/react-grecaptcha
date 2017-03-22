@@ -1,29 +1,38 @@
 import React from 'react';
-import test from 'ava';
-import { shallow } from 'enzyme';
+import renderer from 'react-test-renderer';
 import Recaptcha from '../src/Recaptcha';
 
-const emptyFunction = () => {};
-const wrapper = shallow(
-  <Recaptcha
-    sitekey="6LedJiATAAAAAJvpLFxW9dSiEGu8rGyoOIuTsvtg"
-    callback={emptyFunction}
-    expiredCallback={emptyFunction}
-  />,
-);
-
-test('should render with `g-recaptcha` className', (t) => {
-  t.is(
-    wrapper.find('.g-recaptcha').length,
-    1,
+describe('<Recaptcha />', () => {
+  const wrapper = renderer.create(
+    <Recaptcha
+      sitekey="6LedJiATAAAAAJvpLFxW9dSiEGu8rGyoOIuTsvtg"
+      callback={() => {
+      }}
+      expiredCallback={() => {
+      }}
+    />,
   );
-});
 
-test('should render without non-HTML component properties', (t) => {
-  const wrapperProps = wrapper.props();
+  const invisibleWrapper = renderer.create(
+    <Recaptcha
+      sitekey="6LedJiATAAAAAJvpLFxW9dSiEGu8rGyoOIuTsvtg"
+      callback={() => {
+      }}
+      expiredCallback={() => {
+      }}
+      invisible
+    />,
+  );
 
-  t.falsy(wrapperProps.callback);
-  t.falsy(wrapperProps.expiredCallback);
-  t.falsy(wrapperProps.locale);
-  t.falsy(wrapperProps.sitekey);
+  it('should render with `g-recaptcha` className', () => {
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render without non-HTML component properties', () => {
+    expect(wrapper.toJSON()).toMatchSnapshot();
+  });
+
+  it('should render invisible version', () => {
+    expect(invisibleWrapper.toJSON()).toMatchSnapshot();
+  });
 });
