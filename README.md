@@ -60,6 +60,9 @@ const expiredCallback = () => {...};
   expiredCallback={expiredCallback}
   locale="zh-TW"
   className="customClassName"
+  
+  // Other props will be passed into the component.
+  data-theme="dark"
 />
 ```
 
@@ -67,8 +70,14 @@ const expiredCallback = () => {...};
 
 - To reset the recaptcha:
 
-```
+```js
 window.grecaptcha.reset();
+
+// You can use other functions the same way.
+window.grecaptcha.execute
+window.grecaptcha.getResponse
+window.grecaptcha.render
+...
 ```
 
 ### props
