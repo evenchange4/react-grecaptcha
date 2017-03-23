@@ -3,6 +3,13 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.6]
+> Mar 23, 2017
+
+* chore(README): update readme and keywords of package.json. 
+
+**Just release for update the npm infomartion without any changes.**
+
 ## [v1.1.5]
 > Mar 23, 2017
 
