@@ -46,6 +46,8 @@ https://www.webpackbin.com/bins/-Kf5qhYrlv3Iez-ozVki
 ## Installation
 
 ```console
+$ yarn add react-grecaptcha
+// or
 $ npm install react-grecaptcha --save
 ```
 
