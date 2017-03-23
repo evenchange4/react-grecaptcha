@@ -45,6 +45,8 @@ https://www.webpackbin.com/bins/-Kf5qhYrlv3Iez-ozVki
 
 ## Installation
 
+React-grecaptcha requires **React 0.14 or later.**
+
 ```console
 $ yarn add react-grecaptcha
 // or
