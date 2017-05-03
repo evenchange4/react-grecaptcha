@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.1.7]
+> May 03, 2017
+
 * chore(prop-types): switch to prop-types library
 
 ## [v1.1.6]
