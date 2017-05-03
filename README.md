@@ -6,26 +6,6 @@
 
 [![Dependency Status][dependency-badge]][dependency] [![devDependency Status][devDependency-badge]][devDependency] [![peerDependency Status][peerDependency-badge]][peerDependency]
 
-[build-badge]: https://img.shields.io/travis/evenchange4/react-grecaptcha/master.svg?style=flat-square
-[build]: https://travis-ci.org/evenchange4/react-grecaptcha
-
-[npm-badge]: https://img.shields.io/npm/v/react-grecaptcha.svg?style=flat-square
-[npm]: https://www.npmjs.org/package/react-grecaptcha
-
-[codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/react-grecaptcha.svg?style=flat-square
-[codecov]: https://codecov.io/github/evenchange4/react-grecaptcha?branch=master
-
-[npm-downloads]: https://img.shields.io/npm/dt/react-grecaptcha.svg?style=flat-square
-
-[license-badge]: https://img.shields.io/npm/l/react-grecaptcha.svg?style=flat-square
-[license]: http://michaelhsu.mit-license.org/
-
-[dependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha.svg?style=flat-square
-[dependency]: https://david-dm.org/evenchange4/react-grecaptcha
-[devDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/dev-status.svg?style=flat-square
-[devDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=devDependencies
-[peerDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/peer-status.svg?style=flat-square
-[peerDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=peerDependencies
 [![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/react-grecaptcha.svg)](https://greenkeeper.io/)
 
 ## Feature
@@ -123,3 +103,19 @@ $ yarn run test:watch
 ## [LICENSE](LICENSE)
 
 MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
+
+[build-badge]: https://img.shields.io/travis/evenchange4/react-grecaptcha/master.svg?style=flat-square
+[build]: https://travis-ci.org/evenchange4/react-grecaptcha
+[npm-badge]: https://img.shields.io/npm/v/react-grecaptcha.svg?style=flat-square
+[npm]: https://www.npmjs.org/package/react-grecaptcha
+[codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/react-grecaptcha.svg?style=flat-square
+[codecov]: https://codecov.io/github/evenchange4/react-grecaptcha?branch=master
+[npm-downloads]: https://img.shields.io/npm/dt/react-grecaptcha.svg?style=flat-square
+[license-badge]: https://img.shields.io/npm/l/react-grecaptcha.svg?style=flat-square
+[license]: http://michaelhsu.mit-license.org/
+[dependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha.svg?style=flat-square
+[dependency]: https://david-dm.org/evenchange4/react-grecaptcha
+[devDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/dev-status.svg?style=flat-square
+[devDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=devDependencies
+[peerDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/peer-status.svg?style=flat-square
+[peerDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=peerDependencies
