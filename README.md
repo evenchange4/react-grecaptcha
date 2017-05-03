@@ -19,9 +19,9 @@
 
 ## Quick Demo on Webpackbin
 
-https://www.webpackbin.com/bins/-Kf5qhYrlv3Iez-ozVki
+https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy
 
-[![./docs/screenshot.gif](./docs/screenshot.gif)](https://www.webpackbin.com/bins/-Kf5qhYrlv3Iez-ozVki)
+[![./docs/screenshot.gif](./docs/screenshot.gif)](https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy)
 
 ## Installation
 
