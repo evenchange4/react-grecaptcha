@@ -57,7 +57,7 @@
     "lint-config-m": "^3.1.0",
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
+    "react-dom": "^16.0.0",
     "react-test-renderer": "^15.4.2",
     "stylelint": "^7.9.0"
   },
