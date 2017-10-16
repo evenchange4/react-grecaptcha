@@ -32,7 +32,8 @@ $ yarn add react-grecaptcha
 
 ## Usage
 
-- Storybook: [react-grecaptcha.netlify.com](https://react-grecaptcha.netlify.com)
+1. Storybook: [react-grecaptcha.netlify.com](https://react-grecaptcha.netlify.com)
+2. Webpackbin: [webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy](https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy)
 
 ## API
 
