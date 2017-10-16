@@ -31,7 +31,7 @@ deploy:
     skip_cleanup: true
     on:
       tags: true
-      repo: evenchange4/react-progressive-bg-image
+      repo: evenchange4/react-grecaptcha
 
 cache:
   yarn: true
