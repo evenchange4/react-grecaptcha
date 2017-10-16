@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.2.1]
+> Oct 16, 2017
+
+* Docs: Update readme only for NPM information.
+
 ## [v1.2.0]
 > Oct 16, 2017
 
