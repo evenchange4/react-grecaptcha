@@ -55,7 +55,10 @@ storiesOf('Recaptcha', module)
   .add(
     'Invisible reCAPTCHA',
     withInfo({
-      text: `Validate users in the background. https://developers.google.com/recaptcha/docs/invisible`,
+      text: `
+        Validate users in the background. https://developers.google.com/recaptcha/docs/invisible
+        window.grecaptcha.execute();
+      `,
       inline: true,
       propTables: [Recaptcha],
     })(() => (
