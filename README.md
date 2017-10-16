@@ -2,54 +2,37 @@
 
 > React.js Google reCAPTCHA v2 integration component.
 
-[![Travis][build-badge]][build] [![Codecov Status][codecov-badge]][codecov] [![npm package][npm-badge]][npm] [![npm downloads][npm-downloads]][npm] [![license][license-badge]][license]
+[![Travis][build-badge]][build] 
+[![Codecov Status][codecov-badge]][codecov] 
+[![npm package][npm-badge]][npm] 
+[![npm downloads][npm-downloads]][npm] 
+[![node][node]]()
 
-[![Dependency Status][dependency-badge]][dependency] [![devDependency Status][devDependency-badge]][devDependency] [![peerDependency Status][peerDependency-badge]][peerDependency]
+[![Dependency Status][dependency-badge]][dependency]
+[![devDependency Status][devDependency-badge]][devDependency]
+[![peerDependency Status][peerDependency-badge]][peerDependency]
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/evenchange4/react-grecaptcha.svg)](https://greenkeeper.io/)
+[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
+[![prettier][prettier-badge]][prettier]
+[![license][license-badge]][license]
 
 ## Feature
 
 1. Isomorphic support. (Only render on client side.)
 2. Lazy load scripts for routing.
 3. Automatically render the reCAPTCHA widget.
-4. I18n support.
-  - https://developers.google.com/recaptcha/docs/language
+4. I18n support. https://developers.google.com/recaptcha/docs/language
 5. Simple to use.
-
-## Quick Demo on Webpackbin
-
-https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy
-
-[![./docs/screenshot.gif](./docs/screenshot.gif)](https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy)
 
 ## Installation
 
-React-grecaptcha requires **React 0.14 or later.**
-
 ```console
 $ yarn add react-grecaptcha
-// or
-$ npm install react-grecaptcha --save
 ```
 
 ## Usage
 
-```js
-const verifyCallback = response => console.log(response);
-const expiredCallback = () => {...};
-
-<Recaptcha
-  sitekey={RECAPTCHA_SITE_KEY}
-  callback={verifyCallback}
-  expiredCallback={expiredCallback}
-  locale="zh-TW"
-  className="customClassName"
-  
-  // Other props will be passed into the component.
-  data-theme="dark"
-/>
-```
+- Storybook: [react-grecaptcha.netlify.com](https://react-grecaptcha.netlify.com)
 
 ## API
 
@@ -65,29 +48,27 @@ window.grecaptcha.render
 ...
 ```
 
-### props
-
-#### Required
--   `sitekey`: PropTypes.string.isRequired
--   `callback`: PropTypes.func.isRequired
--   `expiredCallback`: PropTypes.func.isRequired
-
-#### Options
--   `className`: PropTypes.string
--   `invisible`: PropTypes.bool
--   `locale`: PropTypes.string
-
 ## Development
 
+### Requirements
+
+-   node >= 8.7.0
+-   npm >= 5.4.2
+-   yarn >= 1.2.1
+
 ```
-$ yarn install
+$ yarn install --pure-lockfile
+$ yarn start
 ```
 
 ## Test
 
 ```
-$ yarn run lint
+$ yarn run format
+$ yarn run eslint
 $ yarn run test:watch
+$ yarn run build
+$ yarn run build-storybook
 ```
 
 ---
@@ -96,7 +77,7 @@ $ yarn run test:watch
 
 * ⇄ Pull requests and ★ Stars are always welcome.
 * For bugs and feature requests, please create an issue.
-* Pull requests must be accompanied by passing automated tests (`$ npm test`).
+* Pull requests must be accompanied by passing automated tests (`$ yarn test`).
 
 ## [CHANGELOG](CHANGELOG.md)
 
@@ -110,6 +91,7 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [npm]: https://www.npmjs.org/package/react-grecaptcha
 [codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/react-grecaptcha.svg?style=flat-square
 [codecov]: https://codecov.io/github/evenchange4/react-grecaptcha?branch=master
+[node]: https://img.shields.io/node/v/react-grecaptcha.svg?style=flat-square
 [npm-downloads]: https://img.shields.io/npm/dt/react-grecaptcha.svg?style=flat-square
 [license-badge]: https://img.shields.io/npm/l/react-grecaptcha.svg?style=flat-square
 [license]: http://michaelhsu.mit-license.org/
@@ -119,3 +101,7 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [devDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=devDependencies
 [peerDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/peer-status.svg?style=flat-square
 [peerDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=peerDependencies
+[greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/react-grecaptcha.svg?style=flat-square
+[greenkeeper]: https://greenkeeper.io/
+[prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square
+[prettier]: https://github.com/prettier/prettier
