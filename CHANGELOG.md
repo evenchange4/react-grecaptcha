@@ -3,6 +3,9 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.2.0]
+> Oct 16, 2017
+
 * feat(storybook): introduce storybook as development/demo page
 * test(jest): use storyshot
 * chore(react): update to react 16
