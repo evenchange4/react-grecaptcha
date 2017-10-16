@@ -24,6 +24,12 @@
 4. I18n support. https://developers.google.com/recaptcha/docs/language
 5. Simple to use.
 
+## Demo
+
+1. Storybook: [react-grecaptcha.netlify.com](https://react-grecaptcha.netlify.com)
+2. Webpackbin: [webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy](https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy)
+
+
 ## Installation
 
 ```console
@@ -32,8 +38,25 @@ $ yarn add react-grecaptcha
 
 ## Usage
 
-1. Storybook: [react-grecaptcha.netlify.com](https://react-grecaptcha.netlify.com)
-2. Webpackbin: [webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy](https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy)
+```js
+import Recaptcha from 'react-grecaptcha';
+
+const verifyCallback = response => console.log(response);
+const expiredCallback = () => {...};
+
+<Recaptcha
+  sitekey={RECAPTCHA_SITE_KEY}
+  callback={verifyCallback}
+  expiredCallback={expiredCallback}
+  locale="zh-TW"
+  className="customClassName"
+  
+  // Other props will be passed into the component.
+  data-theme="dark"
+/>
+```
+
+```
 
 ## API
 
