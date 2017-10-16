@@ -8,7 +8,8 @@ const ID = '_grecaptcha.element.id';
 const CALLBACK_NAME = '_grecaptcha.data-callback';
 const EXPIRED_CALLBACK_NAME = '_grecaptcha.data-expired-callback';
 
-const removeChild = elem => elem.parentNode && elem.parentNode.removeChild(elem);
+const removeChild = elem =>
+  elem.parentNode && elem.parentNode.removeChild(elem);
 
 class Recaptcha extends React.Component {
   static propTypes = {
@@ -21,13 +22,13 @@ class Recaptcha extends React.Component {
     className: PropTypes.string,
     invisible: PropTypes.bool,
     locale: PropTypes.string,
-  }
+  };
 
   static defaultProps = {
     locale: 'en',
     className: undefined,
     invisible: false,
-  }
+  };
 
   componentDidMount() {
     const { locale, callback, expiredCallback } = this.props;
@@ -40,7 +41,7 @@ class Recaptcha extends React.Component {
     script.type = 'text/javascript';
     script.async = true;
     script.defer = true;
-    script.onerror = (oError) => {
+    script.onerror = oError => {
       throw new URIError(`The script ${oError.target.src} is not accessible.`);
     };
     head.appendChild(script);
@@ -65,9 +66,7 @@ class Recaptcha extends React.Component {
       ...(invisible && { 'data-size': 'invisible' }),
     };
 
-    return (
-      <div {...props} />
-    );
+    return <div {...props} />;
   }
 }
 

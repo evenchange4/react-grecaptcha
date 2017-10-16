@@ -1,14 +1,17 @@
-# OS X crap
+# See https://help.github.com/ignore-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/storybook-static
+/lib
+
+# misc
 .DS_Store
-
-# no log
-*.log
-
-# Node.js / npm
-node_modules
-
-# build
-lib
-
-# code coverage
-coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

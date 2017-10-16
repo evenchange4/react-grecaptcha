@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+* feat(storybook): introduce storybook as development/demo page
+* test(jest): use storyshot
+* chore(react): update to react 16
+* docs(README): update
+
 ## [v1.1.7]
 > May 03, 2017
 

@@ -2,10 +2,11 @@
   "name": "react-grecaptcha",
   "version": "1.1.7",
   "description": "React.js Google reCAPTCHA v2 integration component.",
-  "author": "Michael Hsu",
+  "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/evenchange4/react-grecaptcha/issues"
+    "url": "https://github.com/evenchange4/react-grecaptcha/issues",
+    "email": "evenchange4@gmail.com"
   },
   "homepage": "https://github.com/evenchange4/react-grecaptcha#readme",
   "repository": {
@@ -14,76 +15,135 @@
   },
   "main": "lib/index.js",
   "files": [
-    "lib",
-    "src",
-    "test"
+    "lib"
   ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
   "keywords": [
     "react",
     "recaptcha",
-    "google-recaptcha"
+    "google-recaptcha",
+    "Invisible reCAPTCHA",
+    "reCAPTCHA v2"
   ],
   "scripts": {
     "clean": "rm -rf lib",
-    "coverage": "npm test --coverage && codecov",
     "prebuild": "npm run clean",
-    "build": "NODE_ENV=production babel src --out-dir lib",
-    "test": "jest",
-    "test:watch": "npm test -- --watch",
-    "test:coverage": "npm test --coverage",
-    "lint:js": "eslint --ignore-path .gitignore .",
-    "lint": "npm run lint:js",
-    "prepublish": "npm run build"
+    "build": "NODE_ENV=production babel src --out-dir lib --ignore example.js,test.js",
+    "test": "NODE_ENV='test' jest --coverage --runInBand",
+    "test:watch": "npm run test -- --watch",
+    "start": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "eslint": "eslint ./",
+    "format": "prettier --write 'src/**/*.js' '.storybook/*.js'"
   },
   "peerDependencies": {
-    "react": ">= 0.14.0"
+    "react": "^0.14.0 || ^15.0.0 || ^16.0.0"
   },
   "dependencies": {
     "classnames": "^2.2.5",
     "lodash.omit": "^4.5.0",
-    "prop-types": "^15.5.8"
+    "prop-types": "^15.6.0"
   },
   "devDependencies": {
-    "babel-cli": "^6.24.0",
-    "babel-jest": "^19.0.0",
+    "@storybook/addon-actions": "^3.2.11",
+    "@storybook/addon-info": "^3.2.11",
+    "@storybook/addon-links": "^3.2.10",
+    "@storybook/addon-options": "^3.2.10",
+    "@storybook/addon-storyshots": "^3.2.11",
+    "@storybook/react": "^3.2.11",
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.0.1",
     "babel-plugin-add-module-exports": "^0.2.1",
-    "babel-preset-es2015": "^6.24.0",
-    "babel-preset-react": "^6.23.0",
-    "babel-preset-stage-0": "^6.22.0",
-    "babel-register": "^6.24.0",
-    "codecov": "^2.1.0",
-    "eslint": "^3.18.0",
-    "jest": "^19.0.2",
-    "lint-config-m": "^3.1.0",
-    "react": "^15.4.2",
-    "react-addons-test-utils": "^15.4.2",
-    "react-dom": "^15.4.2",
-    "react-test-renderer": "^15.4.2",
-    "stylelint": "^7.9.0"
-  },
-  "babel": {
-    "presets": [
-      "react",
-      "es2015",
-      "stage-0"
-    ],
-    "plugins": [
-      "add-module-exports"
-    ]
-  },
-  "eslintConfig": {
-    "extends": [
-      "./node_modules/lint-config-m/eslint.js"
-    ]
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react-app": "^3.0.3",
+    "babel-preset-stage-0": "^6.24.1",
+    "codecov": "^2.3.1",
+    "enzyme": "^3.0.0",
+    "enzyme-adapter-react-16": "^1.0.0",
+    "enzyme-to-json": "^3.0.1",
+    "eslint": "^4.7.2",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-config-react-app": "^2.0.1",
+    "eslint-plugin-flowtype": "^2.36.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jest": "^21.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-prettier": "^2.3.1",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "prettier": "^1.7.4",
+    "raf": "^3.4.0",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-test-renderer": "^16.0.0"
   },
   "jest": {
-    "collectCoverage": true,
-    "coveragePathIgnorePatterns": [
-      "/node_modules/",
-      "/test/"
+    "setupTestFrameworkScriptFile": "<rootDir>/setupTests.js",
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/**/*.test.{js,jsx}",
+      "!src/**/*.example.{js,jsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>/node_modules/",
+      "<rootDir>/lib/"
     ],
     "coverageReporters": [
       "text"
     ]
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-react-app",
+      "babel-preset-stage-0",
+      [
+        "babel-preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ]
+    ]
+  },
+  "prettier": {
+    "trailingComma": "all",
+    "singleQuote": true
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "react-app",
+      "airbnb",
+      "prettier",
+      "prettier/flowtype",
+      "prettier/react",
+      "plugin:jest/recommended"
+    ],
+    "plugins": [
+      "prettier",
+      "jest"
+    ],
+    "env": {
+      "jest/globals": true
+    },
+    "rules": {
+      "react/jsx-filename-extension": [
+        1,
+        {
+          "extensions": [
+            ".js"
+          ]
+        }
+      ],
+      "import/no-extraneous-dependencies": 0,
+      "jsx-a11y/no-static-element-interactions": 0,
+      "react/forbid-prop-types": 0,
+      "react/require-default-props": 0,
+      "prettier/prettier": "error"
+    }
   }
 }
