@@ -29,7 +29,7 @@
 1. Storybook: [react-grecaptcha.netlify.com](https://react-grecaptcha.netlify.com)
 2. Webpackbin: [webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy](https://www.webpackbin.com/bins/-KjCPM_MB-WIp-vxaBCy)
 
-[![storybook](./docs/demo.png)](react-grecaptcha.netlify.com)
+[![storybook](./docs/demo.png)](https://react-grecaptcha.netlify.com)
 
 ## Installation
 
