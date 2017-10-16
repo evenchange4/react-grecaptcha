@@ -57,8 +57,6 @@ const expiredCallback = () => {...};
 />
 ```
 
-```
-
 ## API
 
 - To reset the recaptcha:
