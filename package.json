@@ -1,6 +1,6 @@
 {
   "name": "react-grecaptcha",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "React.js Google reCAPTCHA v2 integration component.",
   "author": "Michael Hsu <evenchange4@gmail.com>",
   "license": "MIT",
