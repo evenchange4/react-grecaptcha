@@ -16,7 +16,8 @@
   "typings": "./index.d.ts",
   "main": "lib/index.js",
   "files": [
-    "lib"
+    "lib",
+    "index.d.ts"
   ],
   "engines": {
     "node": ">=8.0.0"

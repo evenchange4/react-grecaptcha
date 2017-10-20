@@ -3,6 +3,11 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.2.3]
+> Oct 20, 2017
+
+* fix(ts): missing `index.d.ts` while `npm pack`
+
 ## [v1.2.2]
 > Oct 20, 2017
 
