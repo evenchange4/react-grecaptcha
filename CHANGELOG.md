@@ -3,6 +3,12 @@
 ## [HEAD]
 > Unreleased
 
+## [v1.2.2]
+> Oct 20, 2017
+
+* chore(type): Added typescript tpyings. ([vasilevich](https://github.com/vasilevich) in [#70)
+
+
 ## [v1.2.1]
 > Oct 16, 2017
 
