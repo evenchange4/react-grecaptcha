@@ -1,7 +1,9 @@
 ## Change Log
 
-### upcoming (2018/01/18 06:54 +00:00)
+### v1.2.4 (2018/01/18 07:04 +00:00)
 
+* [81d016e](https://github.com/evenchange4/react-grecaptcha/commit/81d016e9a552fc2b93ae13b5a64f418554af89ea) 1.2.4 (@evenchange4)
+* [#76](https://github.com/evenchange4/react-grecaptcha/pull/76) chore(deps): pin dependencies (#76) (@renovate[bot])
 * [#75](https://github.com/evenchange4/react-grecaptcha/pull/75) Configure Renovate (#75) (@renovate[bot])
 
 ### v1.2.3 (2017/10/20 03:56 +00:00)
