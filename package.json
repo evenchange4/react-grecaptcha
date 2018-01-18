@@ -69,7 +69,6 @@
     "eslint": "4.15.0",
     "eslint-config-airbnb": "16.1.0",
     "eslint-config-prettier": "2.9.0",
-    "eslint-config-react-app": "2.1.0",
     "eslint-plugin-flowtype": "2.41.0",
     "eslint-plugin-import": "2.8.0",
     "eslint-plugin-jest": "21.7.0",
@@ -120,7 +119,6 @@
   "eslintConfig": {
     "parser": "babel-eslint",
     "extends": [
-      "react-app",
       "airbnb",
       "prettier",
       "prettier/flowtype",
