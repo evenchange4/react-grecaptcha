@@ -3,7 +3,6 @@
 exports[`Storyshots Recaptcha Invisible reCAPTCHA 1`] = `
 <Recaptcha
   callback={[Function]}
-  className={undefined}
   expiredCallback={[Function]}
   invisible={true}
   locale="zh-TW"
@@ -22,7 +21,6 @@ exports[`Storyshots Recaptcha Invisible reCAPTCHA 1`] = `
 exports[`Storyshots Recaptcha With locale 1`] = `
 <Recaptcha
   callback={[Function]}
-  className={undefined}
   expiredCallback={[Function]}
   invisible={false}
   locale="zh-TW"
@@ -40,7 +38,6 @@ exports[`Storyshots Recaptcha With locale 1`] = `
 exports[`Storyshots Recaptcha With otherProps 1`] = `
 <Recaptcha
   callback={[Function]}
-  className={undefined}
   data-theme="dark"
   expiredCallback={[Function]}
   invisible={false}
@@ -60,7 +57,6 @@ exports[`Storyshots Recaptcha With otherProps 1`] = `
 exports[`Storyshots Recaptcha reCAPTCHA v2 1`] = `
 <Recaptcha
   callback={[Function]}
-  className={undefined}
   expiredCallback={[Function]}
   invisible={false}
   locale="en"

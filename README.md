@@ -2,17 +2,16 @@
 
 > React.js Google reCAPTCHA v2 integration component.
 
-[![Travis][build-badge]][build] 
-[![Codecov Status][codecov-badge]][codecov] 
-[![npm package][npm-badge]][npm] 
-[![npm downloads][npm-downloads]][npm] 
+[![Travis][build-badge]][build]
+[![Codecov Status][codecov-badge]][codecov]
+[![npm package][npm-badge]][npm]
+[![npm downloads][npm-downloads]][npm]
 [![node][node]]()
 
 [![Dependency Status][dependency-badge]][dependency]
-[![devDependency Status][devDependency-badge]][devDependency]
-[![peerDependency Status][peerDependency-badge]][peerDependency]
+[![devDependency Status][devdependency-badge]][devdependency]
+[![peerDependency Status][peerdependency-badge]][peerdependency]
 
-[![Greenkeeper badge][greenkeeper-badge]][greenkeeper]
 [![prettier][prettier-badge]][prettier]
 [![license][license-badge]][license]
 
@@ -51,7 +50,7 @@ const expiredCallback = () => {...};
   expiredCallback={expiredCallback}
   locale="zh-TW"
   className="customClassName"
-  
+
   // Other props will be passed into the component.
   data-theme="dark"
 />
@@ -59,7 +58,7 @@ const expiredCallback = () => {...};
 
 ## API
 
-- To reset the recaptcha:
+* To reset the recaptcha:
 
 ```js
 window.grecaptcha.reset();
@@ -75,9 +74,8 @@ window.grecaptcha.render
 
 ### Requirements
 
--   node >= 8.7.0
--   npm >= 5.4.2
--   yarn >= 1.2.1
+* node >= 9.4.0
+* yarn >= 1.3.2
 
 ```
 $ yarn install --pure-lockfile
@@ -120,11 +118,9 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [license]: http://michaelhsu.mit-license.org/
 [dependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha.svg?style=flat-square
 [dependency]: https://david-dm.org/evenchange4/react-grecaptcha
-[devDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/dev-status.svg?style=flat-square
-[devDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=devDependencies
-[peerDependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/peer-status.svg?style=flat-square
-[peerDependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=peerDependencies
-[greenkeeper-badge]: https://badges.greenkeeper.io/evenchange4/react-grecaptcha.svg?style=flat-square
-[greenkeeper]: https://greenkeeper.io/
+[devdependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/dev-status.svg?style=flat-square
+[devdependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=devDependencies
+[peerdependency-badge]: https://david-dm.org/evenchange4/react-grecaptcha/peer-status.svg?style=flat-square
+[peerdependency]: https://david-dm.org/evenchange4/react-grecaptcha#info=peerDependencies
 [prettier-badge]: https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square
 [prettier]: https://github.com/prettier/prettier
