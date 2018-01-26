@@ -6,7 +6,6 @@
 [![Codecov Status][codecov-badge]][codecov]
 [![npm package][npm-badge]][npm]
 [![npm downloads][npm-downloads]][npm]
-[![node][node]]()
 
 [![Dependency Status][dependency-badge]][dependency]
 [![devDependency Status][devdependency-badge]][devdependency]
@@ -112,7 +111,6 @@ MIT: [http://michaelhsu.mit-license.org](http://michaelhsu.mit-license.org)
 [npm]: https://www.npmjs.org/package/react-grecaptcha
 [codecov-badge]: https://img.shields.io/codecov/c/github/evenchange4/react-grecaptcha.svg?style=flat-square
 [codecov]: https://codecov.io/github/evenchange4/react-grecaptcha?branch=master
-[node]: https://img.shields.io/node/v/react-grecaptcha.svg?style=flat-square
 [npm-downloads]: https://img.shields.io/npm/dt/react-grecaptcha.svg?style=flat-square
 [license-badge]: https://img.shields.io/npm/l/react-grecaptcha.svg?style=flat-square
 [license]: http://michaelhsu.mit-license.org/
