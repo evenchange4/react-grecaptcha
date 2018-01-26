@@ -1,5 +1,14 @@
 ## Change Log
 
+### v1.2.5 (2018/01/26 03:38 +00:00)
+
+* [8c168b4](https://github.com/evenchange4/react-grecaptcha/commit/8c168b416c374083cf07cb72942d9b81eff877bf) 1.2.5 (@evenchange4)
+* [dbfc94e](https://github.com/evenchange4/react-grecaptcha/commit/dbfc94e1d5d37b8a98eafbc224b09848726d61a7) fix(dependency): remove engines > 9 & pinOnlyDevDependencies (@evenchange4)
+* [#78](https://github.com/evenchange4/react-grecaptcha/pull/78) chore(deps): update dependency lint-staged to v6.0.1 (#78) (@renovate[bot])
+* [#77](https://github.com/evenchange4/react-grecaptcha/pull/77) chore(deps): update dependency jest to v22.1.3 (#77) (@renovate[bot])
+* [9037058](https://github.com/evenchange4/react-grecaptcha/commit/90370584e7af63c999036b7aa49b29a982e9a41c) style(eslint): remove react-app (@evenchange4)
+* [785d0ec](https://github.com/evenchange4/react-grecaptcha/commit/785d0ec43b757145b8c235599919aa2712716404) docs(CHANGELOG): release 1.2.4 (@evenchange4)
+
 ### v1.2.4 (2018/01/18 07:04 +00:00)
 
 * [81d016e](https://github.com/evenchange4/react-grecaptcha/commit/81d016e9a552fc2b93ae13b5a64f418554af89ea) 1.2.4 (@evenchange4)
