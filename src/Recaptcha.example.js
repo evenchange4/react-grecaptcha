@@ -49,7 +49,7 @@ storiesOf('Recaptcha', module)
         callback={action('callback')}
         expiredCallback={action('expiredCallback')}
         locale="zh-TW"
-        useRecaptchaDotNet={true}
+        useRecaptchaDotNet={Boolean(true)}
       />
     )),
   )
