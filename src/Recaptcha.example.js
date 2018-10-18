@@ -38,6 +38,22 @@ storiesOf('Recaptcha', module)
     )),
   )
   .add(
+    'With recaptcha.net',
+    withInfo({
+      text: `I18n https://developers.google.com/recaptcha/docs/language`,
+      inline: true,
+      propTables: [Recaptcha],
+    })(() => (
+      <Recaptcha
+        sitekey={SITE_KEY_LOCALHOST}
+        callback={action('callback')}
+        expiredCallback={action('expiredCallback')}
+        locale="zh-TW"
+        useRecaptchaDotNet={true}
+      />
+    )),
+  )
+  .add(
     'With otherProps',
     withInfo({
       text: `Theme https://developers.google.com/recaptcha/docs/display`,

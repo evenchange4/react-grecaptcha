@@ -23,22 +23,33 @@ class Recaptcha extends React.Component {
     className: PropTypes.string,
     invisible: PropTypes.bool,
     locale: PropTypes.string,
+    useRecaptchaDotNet: PropTypes.bool,
   };
 
   static defaultProps = {
     locale: 'en',
     className: undefined,
     invisible: false,
+    useRecaptchaDotNet: false,
   };
 
   componentDidMount() {
-    const { locale, callback, expiredCallback } = this.props;
+    const {
+      locale,
+      callback,
+      expiredCallback,
+      useRecaptchaDotNet,
+    } = this.props;
+    let apiHost = 'google.com';
+    if (useRecaptchaDotNet) {
+      apiHost = 'recaptcha.net';
+    }
 
     // 1. Async lazy load
     const head = document.head || document.getElementsByTagName('head')[0];
     const script = document.createElement('script');
     script.id = ID;
-    script.src = `https://www.google.com/recaptcha/api.js?hl=${locale}`;
+    script.src = `https://www.${apiHost}/recaptcha/api.js?hl=${locale}`;
     script.type = 'text/javascript';
     script.async = true;
     script.defer = true;
